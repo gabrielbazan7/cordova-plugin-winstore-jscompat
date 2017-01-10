@@ -7,4 +7,4 @@ when implementing a Cordova-based app targeting Windows Phone 8.1.
 
 ## Installation
 
-    cordova plugin add https://github.com/vjrantal/cordova-plugin-winstore-jscompat
+    cordova plugin add https://github.com/gabrielbazan7/cordova-plugin-winstore-jscompat
