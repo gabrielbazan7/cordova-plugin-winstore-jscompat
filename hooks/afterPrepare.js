@@ -8,6 +8,6 @@ var indexFile = path.join(windowsPlatformDirectory, 'www', 'index.html');
 if (fs.existsSync(indexFile)) {
     var htmlContent = fs.readFileSync(indexFile, 'utf8');
     var libraryScriptElement = '<script src="winstore-jscompat/winstore-jscompat.js"></script>';
-    htmlContent = htmlContent.replace('<head>', '<head>\n' + libraryScriptElement + '\n');
+    htmlContent = htmlContent.replace('<head ng-controller="headController">', '<head ng-controller="headController">\n' + libraryScriptElement + '\n');
     fs.writeFileSync(indexFile, htmlContent, 'utf8');
 }
